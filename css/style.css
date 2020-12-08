@@ -1,0 +1,100 @@
+@import "banner.css";
+@import "container2.css";
+@import "modal.css";
+@import "container3.css";
+@import "footer.css";
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 11.5vh;
+    font-family: 'Righteous', cursive;
+    background-color: rgba(0, 0, 0, 0.07);
+    width: 100%;
+    color: rgb(110, 247, 247);
+    transition: .4s;
+}
+nav .nav-logo h1{
+    letter-spacing: 5px;
+}
+nav .nav-menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: calc(15px + .2vw);
+    font-family: 'Poppins', sans-serif;
+}
+.nav-menu ul li {
+    padding:27px 20px;
+    transition: .4s;
+}
+nav .nav-menu ul li a{
+    color:black;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .4s;
+}
+nav .nav-menu ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+.burger{
+    display: none;
+    align-items: center;
+}
+.l{
+    width: 23px;
+    height: 3px;
+    background-color: black;
+    margin: 4px;
+}
+.items i{
+    font-size: 40px;
+    padding: 10px;
+}
+.shrink{
+    height: 9vh;
+    background-color: teal;
+    color: white;
+}
+@media only screen and (max-width:900px){
+    .nav-menu {
+        position: absolute;
+        display:flex;
+        top:11vh;
+        right: 0;
+        transition: .4s;
+        background-color: teal;
+        width: 50%;
+        transform: translate(100%);
+    }
+    .nav-menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .nav-menu ul li{
+        margin: calc(5px + 1vw);
+    }
+    .burger{
+        display: block;
+    }
+}
+@media only screen and (max-width:500px){
+    .nav-menu{
+        width: 100%;
+    }
+}
+
+.fallow{
+    top:9vh;
+}
+.togg{
+    transform: translate(0%);
+}

@@ -1,0 +1,62 @@
+.container1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-image: url("/img/pexels-eberhard-grossgasteiger-1183021.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.banner{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr) ;
+    /* text-align: center; */
+    height: 20vh;
+    width: 55%;
+    font-family: 'Poppins', sans-serif;
+}
+.banner h1{
+    font-size:35px;
+    transition: .4s;
+    color: rgb(209, 209, 209);
+}
+.banner h3 hr{
+    border: solid 1px black;
+    transition: .4s;
+    width: 10%;
+}
+.banner h3{
+    color: black;
+    cursor: pointer;
+    transition: .4s;
+}
+.banner h3:hover{
+    color: teal;
+}
+.banner .links{
+    text-align: right;
+    transition: .4s;
+    font-size: calc(12px + .3vw);
+}
+.banner .links a{
+    color: rgb(209, 209, 209);
+    text-decoration: none;
+}
+@media only screen and (max-width:650px){
+    .banner{
+        width: 70%;
+    }
+    .banner .links{
+        text-align: left;
+    }
+    .banner h1{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:550px){
+    .banner h1{
+        font-size: 23px;
+    }
+    
+}

@@ -1,0 +1,93 @@
+.footer{
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    transition: .4s;
+}
+.footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: auto;
+}
+.footerContent div{
+    height: 20vh;
+    color: white;
+    width: 250px;
+}
+.footerContent .footer-brand{
+    font-family: 'Righteous', cursive;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: teal;
+}
+.footer-brand .social-links{
+    margin: 0;
+    padding :10px 0px;
+    font-size: 25px;
+}
+.footerContent .footer-support,
+.footer-companies
+{
+    font-family: 'Poppins', sans-serif;
+    /* padding-top:1vw ; */
+}
+.footerContent .footer-support ul, 
+.footer-companies ul {
+    list-style: none;
+    padding: 1.3vw;
+}
+.footerContent .footer-support .footer-companies ,a{
+    text-decoration: none;
+    color: white;
+    transition: .4s;
+}
+.footerContent .footer-support .footer-companies, a:hover {
+    color : teal;
+}
+.footerContent .footer-form h3
+{
+    width: 20vw;
+    font-family: 'Poppins', sans-serif;
+
+}
+.footerContent .footer-form input {
+    border: none;
+    padding :10px;
+    outline-style: none;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+.footerContent .footer-form .contact button{
+    margin-top: 1vw;
+    height: 50px;
+    width: 140px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: .4s;
+    border:none;
+    background-color:teal ;
+    color: black;
+}
+.footerContent .footer-form .contact button:hover {
+    background-color:whitesmoke;
+    color: teal;
+}
+@media only screen and (max-width: 498px){
+    .footer{
+        height: 120vh;
+        background-color: black;
+    }
+    .footerContent{
+        height: 80vh;
+    }
+    .footerContent .footer-form h3{
+        width: 55vw;
+    }
+}
