@@ -1,4 +1,3 @@
-<?php
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,12 +36,12 @@
     </div>
     <div class="contact-form">
         <h1>Contact Form</h1>
-        <form class="form-input" action="./contact-form.php" method="POST">
+        <form class="form-input" action="contact-form.php" method="POST">
             <input type="text" placeholder="Name" name="name">
             <input type="email" placeholder="Email" name="email">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
             <button type="submit" class="btn-form">Send</button>
         </form>
+        <p ></p>
     </div>
     <div class="footer">
         <div class="footerContent">
@@ -86,4 +85,3 @@
 <script src="js/jquery.js"></script>
 <script src="js/js.js"></script>
 </html>
-?>

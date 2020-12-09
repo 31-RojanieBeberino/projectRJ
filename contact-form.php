@@ -1,21 +1,20 @@
 <?php
-    echo("hey =====>");
-    // $name = $_POST['name'];
-    // $email = $_POST['email'];
-    // $message = $_POST['messages'];
+    $conn = new mysqli('localhost', 'root', '', 'sample');
 
+    $username = $_POST['name'];
+    $email = $_POST['email'];
+    $sql = "INSERT INTO inputpost (name, email) VALUES ('$username', '$email')";
+    $select = "SELECT * FROM inputpost";
 
-    // $con = new mysqli('localhost', 'root', '', 'test');
-    // if ($con->connect_error){
-    //     die('Connection Failed====>'.$con->connect_error);
-    // }else{
-    //     // echo("hey==");
-    //     // $test = $con->prepare('insert into validation-form(name, email, message) value(?,?,?)');
-    //     // $test->bind_param("sss"$name,$email,$messase);
-    //     // $test->execute();
-    //     // echo("Your Message is Recieved!!");
-    //     // $test->close();
-    //     // $con->close();
-    // }
+    if (isset($_POST['name'], $_POST['email'])){
+        if ($conn->query($sql) === TRUE) {
+            $result = $conn->query($select);
+            while($row = $result->fetch_assoc()){
+                echo "id: " . $row["id"]. " - Name: " . $row["name"]. " " . $row["email"]. "<br>";
+            }
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+    }
 
 ?>
