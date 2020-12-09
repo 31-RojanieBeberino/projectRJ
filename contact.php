@@ -1,3 +1,4 @@
+<?php
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,12 +37,53 @@
     </div>
     <div class="contact-form">
         <h1>Contact Form</h1>
-        <form class="form-input" action="contact-form.php" method="POST">
+        <form class="form-input" action="./contact-form.php" method="POST">
             <input type="text" placeholder="Name" name="name">
             <input type="email" placeholder="Email" name="email">
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
             <button type="submit" class="btn-form">Send</button>
         </form>
     </div>
+    <div class="footer">
+        <div class="footerContent">
+            <div class="footer-brand">
+                <h1>Rojanie</h1>
+                <div class="social-links">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+            <div class="footer-support">
+                <h3>Supports</h3>
+                <ul>
+                    <li><a href="#">Genesis Dellosa</a></li>
+                    <li><a href="#">Jennieca Gobaton</a></li>
+                    <li><a href="#">Fellyrose Beberino</a></li>
+                    <li><a href="#">DevStudioPh</a></li>
+                </ul>
+            </div>
+            <div class="footer-companies">
+                <h3>Companies</h3>
+                <ul>
+                    <li><a href="#">DevStudioPh</a></li>
+                    <li><a href="#">ServMart Carissa</a></li>
+                    <li><a href="#">RYDS Learning Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-form">
+                <h3>Send your message here.</h3>
+                <div class="contact">
+                    <!-- <i class="fas fa-envelope"></i><br> -->
+                    <input type="text" placeholder="Enfter your e-mail address"><br>
+                    <button>Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="js/jquery.js"></script>
+<script src="js/js.js"></script>
 </html>
+?>
