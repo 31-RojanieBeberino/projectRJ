@@ -67,7 +67,7 @@ nav .nav-menu ul li a:hover{
     .nav-menu {
         position: absolute;
         display:flex;
-        top:11vh;
+        top:11.5vh;
         right: 0;
         transition: .4s;
         background-color: teal;
