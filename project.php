@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/fontawesome-free-5.15.1-web/css/all.css">
@@ -9,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
@@ -31,22 +31,8 @@
             </ul>
         </div>
     </nav>
-    <div class="contact-banner">
-        <h1>Contact us <hr></h1>
-    </div>
-    <div class="contact-form">
-        <h1>Contact Form</h1>
-        <div class="contact-inputs">
-            <form class="form-input" method="POST">
-                <span>Name*</span><input type="text" placeholder="Rojanie" name="firstname" id="name" class="name">
-                <input type="text" placeholder="Beberino" name="lastname"  class="name" id="lastname"><br>
-                <span>Email*</span><input type="email" placeholder="rojanie@gmail.com" name="email" class="sub-inputs" id="email"><br>
-                <span>Phone*</span><input type="numder" name="number" placeholder="(63+) 956 *** ***" class="sub-inputs" id="phone"><br>
-                <span>Message</span><textarea name="message" id="" cols="30" rows="10" placeholder="I would like to inform...." id="message"></textarea><br>
-                <button class="btn-form">Send</button>
-            </form>
-        </div>
-        <p ></p>
+    <div class="project-banner">
+        <h1>Project</h1>
     </div>
     <div class="footer">
         <div class="footerContent">
@@ -81,7 +67,7 @@
                 <div class="contact">
                     <!-- <i class="fas fa-envelope"></i><br> -->
                     <input type="text" placeholder="Enfter your e-mail address"><br>
-                    <button id="btn-submit">Sign In</button>
+                    <button>Sign In</button>
                 </div>
             </div>
         </div>
