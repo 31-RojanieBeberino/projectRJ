@@ -29,7 +29,11 @@
     margin: 0;
     padding :10px 0px;
     font-size: 25px;
+    /* transition: .4s; */
 }
+/* .footer-brand .social-links i:hover{
+    background-color: teal;
+} */
 .footerContent .footer-support,
 .footer-companies
 {
@@ -49,8 +53,7 @@
 .footerContent .footer-support .footer-companies, a:hover {
     color : teal;
 }
-.footerContent .footer-form h3
-{
+.footerContent .footer-form h3{
     width: 20vw;
     font-family: 'Poppins', sans-serif;
 

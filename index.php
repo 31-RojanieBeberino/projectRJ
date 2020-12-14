@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href=".//css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -100,7 +100,7 @@
     <div class="container3">
         <div class="content2">
             <div class="contentElement">
-                <img src="/img/pexels-markus-spiske-225250.jpg">
+                <img src="./img/pexels-markus-spiske-225250.jpg">
             </div>
             <div class="contentElement">
                 <h1>Rojanie Project's</h1>
