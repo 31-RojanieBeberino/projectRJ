@@ -1,16 +1,91 @@
 .contact-banner{
-    background-image: url("/img/pexels-eberhard-grossgasteiger-1183021.jpg");
-    min-height: 500px;
-    width: 100%;
+    background-image: url('./img/pexels-negative-space-33999.jpg');
+    height: 50vh;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
     background-repeat: no-repeat;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.contact-banner h1 {
+    text-align: center;
+    color: black;
+    width: 40%;
+    font-size: 4vw; 
+    text-shadow: black;
+}
+.contact-banner hr {
+    width: 60%;
+    margin: auto;
+    height: 1px;
+    border-top: solid 3px black;
 }
 .contact-form{
-    height: 100vh;
+    margin: 80px auto;
+    width: 60%;
+}
+.contact-form h1{
+    height: 15vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.contact-inputs{
+    height: 400px;
     display: flex;
-    margin: auto;
-    width: 50%;
-    background-color: violet;
+    justify-content: center;
+    align-items: center;
+}
+.contact-inputs .form-input{
+    width: 70%;
+    align-items: center;
+}
+.contact-inputs .form-input span{
+    float: left;
+    width:6.5vw;
+    margin-top: .4vw;
+    padding :5px;
+    margin-right:5px ;
+    font-size: calc(13px + .1vw);
+    font-family: 'Poppins', sans-serif;
+}
+.contact-inputs .form-input input{
+    padding : 10px;
+    margin:0px 0px 15px ;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    border:solid 1px rgb(187, 187, 187);
+    outline-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+.contact-inputs .form-input .name{
+    width: 41.1%;
+}
+.contact-inputs .form-input .sub-inputs{
+    width: 82.9%;
+}
+.contact-inputs .form-input textarea {
+    width: 82.9%;
+    border:solid 1px rgb(187, 187, 187);
+    border-radius: 3px;
+    background-color: whitesmoke;
+    outline-style: none;
+    padding:10px;
+    font-family: 'Poppins', sans-serif;
+}
+.contact-inputs .form-input button{
+    padding:7px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border:solid 1px rgb(187, 187, 187);
+    border-radius: 3px;
+    float: right;
+    transition: .4s;
+    outline-style: none;
+}
+.contact-inputs .form-input button:hover{
+    background-color: teal;
+    color: whitesmoke;
 }

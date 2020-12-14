@@ -32,15 +32,20 @@
         </div>
     </nav>
     <div class="contact-banner">
-        
+        <h1>Contact us <hr></h1>
     </div>
     <div class="contact-form">
         <h1>Contact Form</h1>
-        <form class="form-input" action="contact-form.php" method="POST">
-            <input type="text" placeholder="Name" name="name">
-            <input type="email" placeholder="Email" name="email">
-            <button type="submit" class="btn-form">Send</button>
-        </form>
+        <div class="contact-inputs">
+            <form class="form-input" action="contact-form.php" method="POST">
+                <span>Name*</span><input type="text" placeholder="Rojanie" name="firstname" class="name">
+                <input type="text" placeholder="Beberino" name="lastname" class="name"><br>
+                <span>Email*</span><input type="email" placeholder="rojanie@gmail.com" name="email" class="sub-inputs"><br>
+                <span>Phone*</span><input type="numder" name="number" placeholder="(63+) 956 *** ***" class="sub-inputs" ><br>
+                <span>Message</span><textarea name="message" id="" cols="30" rows="10" placeholder="I would like to inform...."></textarea><br>
+                <button type="submit" class="btn-form">Send</button>
+            </form>
+        </div>
         <p ></p>
     </div>
     <div class="footer">
