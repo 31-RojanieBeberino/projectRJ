@@ -36,17 +36,12 @@
     </div>
     <div class="contact-form">
         <h1>Contact Form</h1>
-        <div class="contact-inputs">
-            <form class="form-input" method="POST">
-                <span>Name*</span><input type="text" placeholder="Rojanie" name="firstname" id="name" class="name">
-                <input type="text" placeholder="Beberino" name="lastname"  class="name" id="lastname"><br>
-                <span>Email*</span><input type="email" placeholder="rojanie@gmail.com" name="email" class="sub-inputs" id="email"><br>
-                <span>Phone*</span><input type="numder" name="number" placeholder="(63+) 956 *** ***" class="sub-inputs" id="phone"><br>
-                <span>Message</span><textarea name="message" id="" cols="30" rows="10" placeholder="I would like to inform...." id="message"></textarea><br>
-                <button class="btn-form">Send</button>
-            </form>
-        </div>
-        <p ></p>
+        <form action="#">
+            <div class="input-name">
+                <input type="text" name="username" placeholder="First" id="form-name" class="formName" onkeyup="checker(value, 'formName')">
+                <span class="error"></span>
+            </div>
+        </form>
     </div>
     <div class="footer">
         <div class="footerContent">
@@ -89,4 +84,36 @@
 </body>
 <script src="js/jquery.js"></script>
 <script src="js/js.js"></script>
+<script>
+    function checker (value, elementClass ) {
+        console.log(value)
+        var error = '.error'
+        var arrayValue = value.split('')
+        var hasNumeric = []
+        // var error = ('@','$','%','^','&','*')
+        var regex = /^[A-Za-z0-9\s]+$/;
+        var result = regex.test(value)
+
+        arrayValue.map((char) => $.isNumeric(char) && hasNumeric.push(char))
+        console.log(arrayValue)
+
+        if(hasNumeric.length > 0) {
+            console.log(hasNumeric)
+            $(`.${elementClass}`).css('border-color', 'red')
+        }else if (!result){
+            console.log(result)
+            $(`.${elementClass}`).css('border-color', 'red')
+        }else{
+            $(`.${elementClass}`).css('border-color', '#bbbbbb')
+        }
+        //arrayValue.map((char) => {
+            // if(value.has(arrayValue.map((char) => $.isNumeric(char)))) {
+            //     $(`.${elementId}`).css('border-color', 'red')
+            // }else{
+            //     $(`.${elementId}`).css('border-color', '#bbbbbb')
+            // }
+        // })
+    }
+
+</script>
 </html>

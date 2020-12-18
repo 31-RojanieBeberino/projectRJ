@@ -33,7 +33,7 @@
     </nav>
     <div class="container1">
         <div class="banner">
-            <h1>Rojanie Project's</h1>
+            <h1>Rojanie Projects</h1>
             <h3 class="sub-title">Web Developer <hr class="hr"></h3>
             <div class="links">
                 <a href="#">www.facebook.com</a><br>
@@ -103,7 +103,7 @@
                 <img src="./img/pexels-markus-spiske-225250.jpg">
             </div>
             <div class="contentElement">
-                <h1>Rojanie Project's</h1>
+                <h1>Rojanie Projects</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed, corrupti nihil dicta nisi porro aspernatur laudantium eum tempora libero officia praesentium perferendis itaque tempore, adipisci maxime corporis provident accusamus!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed, corrupti nihil dicta nisi porro aspernatur laudantium eum tempora libero officia praesentium perferendis itaque tempore, adipisci maxime corporis provident accusamus!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed, corrupti nihil dicta nisi porro aspernatur laudantium eum tempora.</p>
