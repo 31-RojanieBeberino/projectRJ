@@ -10,6 +10,9 @@
     display: flex;
     align-items: center;
 }
+.error-red{
+    color: red;
+}
 .contact-banner h1 {
     text-align: center;
     color: black;
@@ -23,69 +26,19 @@
     height: 1px;
     border-top: solid 3px black;
 }
-.contact-form{
-    margin: 80px auto;
-    width: 60%;
-}
 .contact-form h1{
     height: 15vh;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
-.contact-inputs{
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contact-form{
+    margin: 80px auto;
+    width: 55%;
+    background-color: aqua;
 }
-.contact-inputs .form-input{
-    width: 70%;
-    align-items: center;
-}
-.contact-inputs .form-input span{
-    float: left;
-    width:6.5vw;
-    margin-top: .4vw;
-    padding :5px;
-    margin-right:5px ;
-    font-size: calc(13px + .1vw);
-    font-family: 'Poppins', sans-serif;
-}
-.contact-inputs .form-input input{
-    padding : 10px;
-    margin:0px 0px 15px ;
-    border-radius: 3px;
-    background-color: whitesmoke;
-    border:solid 1px rgb(187, 187, 187);
+.formName{
     outline-style: none;
-    font-family: 'Poppins', sans-serif;
-}
-.contact-inputs .form-input .name{
-    width: 41.1%;
-}
-.contact-inputs .form-input .sub-inputs{
-    width: 82.9%;
-}
-.contact-inputs .form-input textarea {
-    width: 82.9%;
     border:solid 1px rgb(187, 187, 187);
-    border-radius: 3px;
-    background-color: whitesmoke;
-    outline-style: none;
-    padding:10px;
-    font-family: 'Poppins', sans-serif;
-}
-.contact-inputs .form-input button{
-    padding:7px 20px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    border:solid 1px rgb(187, 187, 187);
-    border-radius: 3px;
-    float: right;
-    transition: .4s;
-    outline-style: none;
-}
-.contact-inputs .form-input button:hover{
-    background-color: teal;
-    color: whitesmoke;
+    padding :10px;
+    border-radius: 3px; 
 }

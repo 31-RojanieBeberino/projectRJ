@@ -4,6 +4,7 @@
 @import "container3.css";
 @import "footer.css";
 @import "../css/contacts/contact.css";
+@import "../css/projects/project.css";
 *{
     margin:0px;
     padding:0px;

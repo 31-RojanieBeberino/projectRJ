@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href=".//css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -9,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
-    <link rel="stylesheet" href=".//css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -24,16 +24,16 @@
         </div>
         <div class="nav-menu">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#" id="home">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a href="#">Contant</a></li>
+                <li><a href="#" id="contact">Contant</a></li>
             </ul>
         </div>
     </nav>
     <div class="container1">
         <div class="banner">
-            <h1>Rojanie Project's</h1>
+            <h1>Rojanie Projects</h1>
             <h3 class="sub-title">Web Developer <hr class="hr"></h3>
             <div class="links">
                 <a href="#">www.facebook.com</a><br>
@@ -45,28 +45,40 @@
     <div class="container2">
         <div class="modal" id="modalELem1">
             <div class="modalcontent">
-                <i class="fas fa-times-circle hidden"></i>
                 <div class="modalenner">
-                    <h1>Modal One</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis voluptas quam laboriosam. Excepturi saepe enim aliquid quas, dolorem minus quam praesentium, iusto nam ipsum vitae harum vel placeat officia corporis.</p>
+                    <div class="partiton">
+                        <h1>Modal One</h1>
+                        <i class="fas fa-times-circle hidden"></i>
+                    </div>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis voluptas quam laboriosam. 
+                    Excepturi saepe enim aliquid quas, dolorem minus quam praesentium, iusto nam ipsum vitae harum vel placeat officia corporis.</p>
                 </div>
             </div>
         </div>
         <div class="modal" id="modalELem2">
             <div class="modalcontent">
-                <i class="fas fa-times-circle hidden"></i>
                 <div class="modalenner">
-                    <h1>Modal Two</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis voluptas quam laboriosam. Excepturi saepe enim aliquid quas, dolorem minus quam praesentium, iusto nam ipsum vitae harum vel placeat officia corporis.</p>
+                <div class="partiton">
+                        <h1>Modal One</h1>
+                        <i class="fas fa-times-circle hidden"></i>
+                    </div>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis voluptas quam laboriosam. 
+                    Excepturi saepe enim aliquid quas, dolorem minus quam praesentium, iusto nam ipsum vitae harum vel placeat officia corporis.</p>
                 </div>
             </div>
         </div>
         <div class="modal" id="modalELem3">
             <div class="modalcontent">
-                <i  class="fas fa-times-circle hidden"></i>
                 <div class="modalenner">
-                    <h1>Modal Three</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis voluptas quam laboriosam. Excepturi saepe enim aliquid quas, dolorem minus quam praesentium, iusto nam ipsum vitae harum vel placeat officia corporis.</p>
+                <div class="partiton">
+                        <h1>Modal One</h1>
+                        <i class="fas fa-times-circle hidden"></i>
+                    </div>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis voluptas quam laboriosam. 
+                    Excepturi saepe enim aliquid quas, dolorem minus quam praesentium, iusto nam ipsum vitae harum vel placeat officia corporis.</p>
                 </div>
             </div>
         </div>
@@ -103,11 +115,23 @@
                 <img src="./img/pexels-markus-spiske-225250.jpg">
             </div>
             <div class="contentElement">
-                <h1>Rojanie Project's</h1>
+                <h1>Rojanie Projects</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed, corrupti nihil dicta nisi porro aspernatur laudantium eum tempora libero officia praesentium perferendis itaque tempore, adipisci maxime corporis provident accusamus!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed, corrupti nihil dicta nisi porro aspernatur laudantium eum tempora libero officia praesentium perferendis itaque tempore, adipisci maxime corporis provident accusamus!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed, corrupti nihil dicta nisi porro aspernatur laudantium eum tempora.</p>
             </div>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="contact-form">
+            <h1>Contact Form</h1>
+            <form action="#">
+                <div class="input-name">
+                    <input type="text" name="username" placeholder="First" id="form-name" class="formName"><br> 
+                    <input type="text" name="lastname" placeholder="Last" id="form-last" class="formlast"><br> 
+                    <div class="error"></div>
+                </div>
+            </form>
         </div>
     </div>
     <div class="footer">
@@ -148,10 +172,8 @@
             </div>
         </div>
     </div>
-    <!-- <div class="container3">
-        <form action=""></form>
-    </div> -->
 </body>
 <script src="js/jquery.js"></script>
 <script src="js/js.js"></script>
+<script src="js/functions.js"></script>
 </html>

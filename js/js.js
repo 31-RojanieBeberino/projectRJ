@@ -41,9 +41,13 @@ $(function(){
     $('.hidden').on('click', function(){
         $('.modal').fadeOut();
     });
-
     //  $('.elementItems').on('click', function() {
     //     var elemId = $(this).attr('data-elemid');
     //     $('#' + elemId).toggle();
     //  });
+
+    // $.ajax({
+    //     type: 'GET',
+        
+    // });
 });

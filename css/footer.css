@@ -27,12 +27,17 @@
 }
 .footer-brand .social-links{
     margin: 0;
-    padding :10px 0px;
+    padding :15px 0px;
     font-size: 25px;
-    /* transition: .4s; */
 }
-/* .footer-brand .social-links i:hover{
-    background-color: teal;
+.footer-brand .social-links i{
+    transition:.4s;
+}
+.footer-brand .social-links i:hover{
+    color: teal;
+}
+/* .footer-brand .social-links i{
+    color:teal;
 } */
 .footerContent .footer-support,
 .footer-companies
