@@ -1,0 +1,98 @@
+.container4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.contact-form{
+    width: 95%;
+    background-color: white;
+    padding:20px 40px 10px 40px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.map{
+    width: 50%;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+.form{
+    width: 45%;
+}
+.contact-form h1{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+.contact-form form{
+    padding :30px 0 0 0;
+}
+.contact-form form .form-row{
+    display: flex;
+    margin: 32px 0;
+}
+form .form-row .input-data{
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+}
+form .form-row .textarea{
+    height: 70px;
+    margin-bottom: 10px;
+}
+.input-data input,
+.textarea textarea{
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    border-bottom: 2px solid rgba(0,0,0,0.12);
+    outline-style: none ;
+    font-family: 'Poppins', sans-serif;
+    transition: all .3s ease;
+}
+.input-data input:focus,
+.textarea textarea:focus{
+    border-bottom: 2px solid rgb(15, 163, 163);
+}
+.input-data input:focus ~ label, 
+.textarea textarea:focus ~ label {
+    color: rgb(0, 0, 0);
+}
+.textarea textarea{
+    resize: none;
+}
+.textarea label{
+    width: 100%;
+    bottom:50px;
+    background-color: #fff;
+    transition: all .3s ease;
+    font-weight: 600;
+}
+.submit-btn .input-data .button{
+    background-color: teal;
+    color: black;
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.input-data label{
+    /* position:absolute; */
+    bottom:50px;
+    transition: all .3s ease;
+    font-size: 14px;
+    font-weight: 600;
+}
+/* .input-data .underline{
+    background-color: red;
+    height: 2px;
+    width: 100%;
+    bottom:0;
+} */

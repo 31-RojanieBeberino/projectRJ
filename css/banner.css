@@ -21,27 +21,35 @@
     transition: .4s;
     color: rgb(209, 209, 209);
 }
-.banner h3 hr{
+.banner hr{
     border: solid 1px black;
     transition: .4s;
     width: 10%;
 }
 .banner h3{
     color: black;
-    cursor: pointer;
+    cursor: default;
     transition: .4s;
+    width:30%;  
 }
-.banner h3:hover{
+.banner hr::after, h3:hover{ 
     color: teal;
+    width: 30%;
 }
 .banner .links{
     text-align: right;
     transition: .4s;
-    font-size: calc(12px + .3vw);
+    font-size: calc(16px + .3vw);
+    transition: .4s;
 }
+
 .banner .links a{
     color: rgb(209, 209, 209);
     text-decoration: none;
+}
+.banner .links a:hover{
+    color: black;
+    font-weight: bold;
 }
 @media only screen and (max-width:650px){
     .banner{

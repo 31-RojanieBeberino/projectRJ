@@ -1,8 +1,13 @@
+<!-- Password: ex7FhnO19*&r%Ce6HB
+    username: pro jectr
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href=".//css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/container5.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -25,16 +30,17 @@
         <div class="nav-menu">
             <ul>
                 <li><a href="#" id="home">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#" id="contact">Contant</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contacts" id="contact">Contact</a></li>
             </ul>
         </div>
     </nav>
     <div class="container1">
         <div class="banner">
             <h1>Rojanie Projects</h1>
-            <h3 class="sub-title">Web Developer <hr class="hr"></h3>
+            <h3 class="sub-title">Web Developer</h3>
+            <hr class="hr">
             <div class="links">
                 <a href="#">www.facebook.com</a><br>
                 <a href="#">www.facebook.com</a><br>
@@ -42,7 +48,7 @@
             </div>
         </div>
     </div>
-    <div class="container2">
+    <div class="container2" id="container2">
         <div class="modal" id="modalELem1">
             <div class="modalcontent">
                 <div class="modalenner">
@@ -60,7 +66,7 @@
             <div class="modalcontent">
                 <div class="modalenner">
                 <div class="partiton">
-                        <h1>Modal One</h1>
+                        <h1>Modal two</h1>
                         <i class="fas fa-times-circle hidden"></i>
                     </div>
                     <hr>
@@ -73,7 +79,7 @@
             <div class="modalcontent">
                 <div class="modalenner">
                 <div class="partiton">
-                        <h1>Modal One</h1>
+                        <h1>Modal Three</h1>
                         <i class="fas fa-times-circle hidden"></i>
                     </div>
                     <hr>
@@ -109,7 +115,7 @@
             </div>
         </div>
     </div>
-    <div class="container3">
+    <div class="container3" id="project">
         <div class="content2">
             <div class="contentElement">
                 <img src="./img/pexels-markus-spiske-225250.jpg">
@@ -122,14 +128,60 @@
             </div>
         </div>
     </div>
-    <div class="container3">
+    <div class="container5" id="about">
+        <div class="itemAbout">
+            <div class="contentAbout1">
+                <h1>About Rojanie</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed, corrupti nihil dicta nisi porro aspernatur laudantium eum tempora libero officia praesentium perferendis itaque tempore, adipisci maxime corporis provident accusamus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed, corrupti nihil dicta nisi porro aspernatur laudantium eum tempora libero officia praesentium perferendis itaque tempore, adipisci maxime corporis provident accusamus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed, corrupti nihil dicta nisi porro aspernatur laudantium eum tempora.</p>
+            </div>
+            <div class="contentAbout2">
+                <div class="aboutImg">
+                    <img src="./img/pexels-josh-sorenson-995301.jpg" alt="">
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="container4" id="contacts">
         <div class="contact-form">
-            <h1>Contact Form</h1>
-            <form action="#">
-                <div class="input-name">
-                    <input type="text" name="username" placeholder="First" id="form-name" class="formName"><br> 
-                    <input type="text" name="lastname" placeholder="Last" id="form-last" class="formlast"><br> 
-                    <div class="error"></div>
+            <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61846.64032073963!2d120.81216890748544!3d14.345377343979726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33962b08169b584b%3A0x2bd94e9faa5d3095!2zMTTCsDIxJzA0LjUiTiAxMjDCsDUxJzAzLjQiRQ!5e0!3m2!1sen!2sph!4v1610518740643!5m2!1sen!2sph"
+                 width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <form class="form" action="insert.php" method="post">
+            <h1>Contacts</h1>
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" id="first-name" onkeyup="checker(value, id)" required>
+                        <div class="underline"></div>
+                        <label>First Name</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" id="last-name" required onkeyup="checker(value, id)">
+                        <div class="underline"></div>
+                        <label>Last Name</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label>Email Address</label>
+                    </div>
+                </div>
+                <div class="form-row textarea">
+                    <div class="input-data">
+                        <textarea cols="30" rows="10" required onkeyup="checker(value, id)"></textarea>
+                        <div class="underline"></div>
+                        <label>Your Message</label>
+                    </div>
+                </div>
+                <div class="form-row submit-btn">
+                    <div class="input-data">
+                        <input type="submit" class="button" value="Send">
+                    </div>
                 </div>
             </form>
         </div>

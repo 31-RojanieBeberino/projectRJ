@@ -1,0 +1,39 @@
+.container5{
+    width: 100%;
+    margin-bottom: 200px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+.container5 .itemAbout{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+.contentAbout2{
+    height: 300px;
+    width: 50%;
+}
+.contentAbout1{
+    height: 300px;
+    width: 50%;
+    margin: 20px;
+}
+.contentAbout1 p{
+    text-align: right;
+}
+.contentAbout1 h1{
+    text-align: right;
+    padding:0px 50px 0px 20px;
+    font-family:'Poppins', sans-serif;
+    font-weight: bold;
+    margin: 20px;
+}
+.aboutImg{
+    width: 100%;
+}
+.aboutImg img{
+    width: 100%;
+}
